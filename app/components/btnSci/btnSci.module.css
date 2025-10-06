@@ -1,0 +1,11 @@
+.btnLink {
+    color: var(--text);
+    background-color: var(--bg-main);
+    box-shadow: 0 0 10px var(--main-light);
+    transition: transform 0.3s;
+    padding: 2px;
+  }
+  
+  .btnLink:hover {
+    transform: scale(1.1);
+  }

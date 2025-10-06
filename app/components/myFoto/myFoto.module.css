@@ -1,0 +1,44 @@
+.imgBox {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    padding: 2px;
+    transform-origin: center;
+    background: conic-gradient(transparent, transparent, transparent, var(--main-light));
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .imgItem {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: slateblue;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: rotateReverse 10s linear infinite;
+  }
+  
+  @keyframes rotateReverse {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .mainFotoImg {
+    position: absolute;
+    display: block;
+    width: 102%;
+    object-fit: cover;
+  }
