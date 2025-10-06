@@ -5,12 +5,14 @@
    ======================= */
 :root {
   --bg: #e6e3e3;
+  --bg-main: white;
   --text: #111827;
   --muted: #6b7280;
 }
 
 [data-theme="dark"] {
-  --bg: #0b1220; /* dunkleres, modernes Grau-Blau passt besser */
+  --bg: #0b1220; 
+  --bg-main: black;
   --text: #f8fafc;
   --muted: #9ca3af;
 }
