@@ -11,7 +11,7 @@ const Navigation = () => {
         <Image src="/nav/haus.png" width={40} height={40} alt={"home"} />{" "}
       </Link>
       |
-      <Link href="/">
+      <Link href="/about">
         <Image
           src="/nav/about.png"
           width={30}
@@ -22,7 +22,7 @@ const Navigation = () => {
         <span className="text-xl text-zinc-800 sm:block hidden">{t("about")} </span>{" "}
       </Link>
       |
-      <Link href="/">
+      <Link href="/projects">
         <Image
           src="/nav/projects.png"
           width={40}
@@ -33,7 +33,7 @@ const Navigation = () => {
         <span className="text-xl text-zinc-800 sm:block hidden">{t("projects")} </span>
       </Link>
       |
-      <Link href="/">
+      <Link href="/contacts">
         <Image
           src="/nav/contacts.png"
           width={40}

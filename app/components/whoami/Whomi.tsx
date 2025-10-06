@@ -7,6 +7,7 @@ import Image from "next/image";
 const Whomi = () => {
   const { t } = useTranslation();
   const { theme, setTheme } = useTheme();
+  
   const imgUrl = theme === "dark" ? "/m.png" : "/m-light.png";
 
   return (

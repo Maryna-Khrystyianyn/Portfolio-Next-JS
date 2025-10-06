@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Header from "./components/header/Header";
 import Whomi from "./components/whoami/Whomi";
-import "./i18n";
+import "./lib/i18n";
 import Skills from "./components/skills/Skills";
 import Navigation from "./components/navigation/Navigation";
 
