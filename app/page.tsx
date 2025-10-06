@@ -9,16 +9,23 @@ import Skills from "./components/skills/Skills";
 import Navigation from "./components/navigation/Navigation";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
-  const [bgImgUrl, setBgImgUrl] = useState<string>("url('/bg-img.png')");
+  const { theme, setTheme, resolvedTheme } = useTheme();
+
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (theme === "dark") {
-      setBgImgUrl("url('/bg-img.png')");
-    } else {
-      setBgImgUrl("url('/bg-img-light2.png')");
-    }
-  }, [theme]);
+    setMounted(true); // true nach dem ersten Client-Render
+  }, []);
+
+  if (!mounted) {
+    // noch kein echtes Theme bekannt, also nichts anzeigen
+    return null;
+  }
+
+  const bgImgUrl =
+    resolvedTheme === "dark"
+      ? "url('/bg-img.png')"
+      : "url('/bg-img-light2.png')";
 
   return (
     <main
@@ -26,7 +33,7 @@ export default function Home() {
       className={`relative flex  items-center  justify-center pt-5 md:pt-15 h-screen  bg-repeat-x bg-top bg-[var(--bg)] text-[var(--text)] `}
     >
       <Navigation />
-      <div className="flex flex-col gap-5 md:gap-15 p-6 bg-[var(--bg-main)] m-3 rounded-md border border-sky-950 w-[90%] max-w-[900px]">
+      <div className="flex flex-col gap-5 md:gap-15 p-6 pb-15 bg-[var(--bg-main)] m-3 rounded-md border border-sky-950 w-[90%] max-w-[900px]">
         <Header />
         <Whomi />
         <Skills />
