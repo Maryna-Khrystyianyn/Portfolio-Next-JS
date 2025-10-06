@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 import Header from "./components/header/Header";
 import Whomi from "./components/whoami/Whomi";
 import "./i18n";
-import { useTranslation } from "react-i18next";
 import Skills from "./components/skills/Skills";
+import Navigation from "./components/navigation/Navigation";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -23,12 +23,13 @@ export default function Home() {
   return (
     <main
       style={{ backgroundImage: bgImgUrl }}
-      className={`flex items-center justify-center h-screen  bg-repeat-x bg-top bg-[var(--bg)] text-[var(--text)] `}
+      className={`relative flex  items-center  justify-center pt-5 md:pt-15 h-screen  bg-repeat-x bg-top bg-[var(--bg)] text-[var(--text)] `}
     >
-      <div className=" p-3 bg-[var(--bg-main)] m-3 rounded-md border border-sky-950 w-[90%] max-w-[900px]">
+      <Navigation />
+      <div className="flex flex-col gap-5 md:gap-15 p-6 bg-[var(--bg-main)] m-3 rounded-md border border-sky-950 w-[90%] max-w-[900px]">
         <Header />
-        <Whomi/>
-        <Skills/>
+        <Whomi />
+        <Skills />
       </div>
     </main>
   );

@@ -1,4 +1,9 @@
 {
-    "whoami":"Wer bin ich?" ,
-    "skills":"Fähigkeiten"
+  "whoami": "Wer bin ich?",
+  "skills": "Fähigkeiten",
+  "about": "Über mich",
+  "projects": "Projekte",
+  "contacts": "Kontakte",
+  "name":"aryna Khrystyianyn",
+  "webdev":"Webentwickler"
 }

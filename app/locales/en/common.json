@@ -1,4 +1,9 @@
 {
-    "whoami":"Whoami" ,
-    "skills":"Skills"
+  "whoami": "Whoami",
+  "skills": "Skills",
+  "about": "About my self",
+  "projects": "Projects",
+  "contacts": "Contacts",
+  "name":"aryna Khrystyianyn",
+  "webdev":"Web Developer"
 }

@@ -1,8 +1,7 @@
 "use client";
 import { MySkills } from "./skills";
 import { useTranslation } from "react-i18next";
-import { useTheme } from "next-themes";
-import "../../i18n";
+
 
 const Skills = () => {
   const { t } = useTranslation();
