@@ -5,9 +5,11 @@
    ======================= */
 :root {
   --bg: #e6e3e3;
-  --bg-main: white;
+  --bg-main: rgb(241, 241, 241);
   --text: #111827;
   --muted: #6b7280;
+  --main-light: #23984e;
+  --main-light-transparent: rgba(35, 152, 78, 0.2);
 }
 
 [data-theme="dark"] {
@@ -24,4 +26,8 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+h3{
+  color:var(--main-light);
 }
