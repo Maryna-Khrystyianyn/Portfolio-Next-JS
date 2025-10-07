@@ -37,7 +37,7 @@ export default function ClientLayout({
       className={`relative flex  items-center  justify-center pt-5 md:pt-15 h-screen  bg-repeat-x bg-top bg-[var(--bg)] text-[var(--text)] `}
     >
       <Navigation />
-      <div className="flex flex-col gap-5 md:gap-15 p-6 pb-15 bg-[var(--bg-main)] m-3 rounded-md border border-sky-950 w-[90%] max-w-[900px]">
+      <div className="max-h-[80%] overflow-auto        flex flex-col gap-5 md:gap-15 p-6 pb-15 bg-[var(--bg-main)] m-3 rounded-md border border-sky-950 w-[90%] max-w-[900px]">
         <Header />
         {children}
       </div>
