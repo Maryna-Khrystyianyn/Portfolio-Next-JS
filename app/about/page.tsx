@@ -69,9 +69,7 @@ const About = () => {
       {/* main text */}
       <h2 className="mt-10 text-xl font-bold">{t("aboutTitel")} </h2>
       <p>{t("aboutText")}</p>
-      <h3 className="text-xl mt-5">
-      {t("aboutPhilosophyTitle")}
-      </h3>
+      <h3>$  {t("aboutPhilosophyTitle")}</h3>
       <p>{t("aboutPhilosophy1")}</p>
       <a className="hover:border-green-700 border rounded-md bg-[var(--main-light-transparent)] border-[var(--main-light-transparent)] w-40 p-2 flex justify-center" href="/CV-Khrystyianyn.pdf" download>Download CV</a>
       <p>{t("aboutPhilosophy2")}</p>
