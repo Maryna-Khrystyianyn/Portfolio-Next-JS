@@ -2,6 +2,7 @@ import { type Project } from "@/app/projects/projectsList";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
+
 type ProjectViewProps = {
   project: Project;
 };
@@ -28,13 +29,14 @@ const ProjectView = ({ project }: ProjectViewProps) => {
               i18n.language as keyof typeof project.description
             ]
           }
-<a href={project.url} className="block font-bold mt-5 w-53 text-center cursor-pointer hover:border-green-700  p-2 rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]">{t("visit")} </a>
-
+          <a
+            href={project.url}
+            className="block font-bold mt-5 w-53 text-center cursor-pointer hover:border-green-700  p-2 rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]"
+          >
+            {t("visit")}{" "}
+          </a>
         </p>
-
-
       </div>
-
     </div>
   );
 };
