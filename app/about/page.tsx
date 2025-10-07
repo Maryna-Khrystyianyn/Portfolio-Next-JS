@@ -80,7 +80,7 @@ const About = () => {
       <p>{t("aboutPhilosophy4")}</p>
       <p>{t("aboutPhilosophy5")}</p>
       <p>{t("aboutPhilosophy6")}</p>
-      <p>{t("aboutPhilosophy7")}</p>
+      <p className="text-center font-bold">{t("aboutPhilosophy7")}</p>
 
 
     </div>
