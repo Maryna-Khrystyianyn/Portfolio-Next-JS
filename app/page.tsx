@@ -5,6 +5,7 @@ import "./lib/i18n";
 import Skills from "./components/skills/Skills";
 import { projectList } from "./projects/projectsList";
 import SkillsMobile from "./components/skills/SkilsMobile";
+import ProjectHomeMobile from "./components/projectView/ProjectHomeMobile";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </div>
 <div className="sm:hidden ">
 <SkillsMobile/>
+<ProjectHomeMobile/>
 </div>
 
     </div>

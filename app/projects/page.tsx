@@ -13,14 +13,14 @@ const Projects = () => {
   return (
     <div className="mt-[-30px]">
       <h3>$ {t("projects")}</h3>
-      <p>{t("projectsDescription")}</p>
+      <p className="sm:text-base text-sm">{t("projectsDescription")}</p>
 
       {/* Projects links */}
-      <div className=" flex flex-wrap gap-5 mt-10">
+      <div className=" flex flex-wrap gap-3 sm:gap-5 sm:mt-10 mt-7">
         {projectList.map((project) => (
           <button
             key={project.id}
-            className="cursor-pointer hover:border-green-700 px-5 py-2 rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]"
+            className="cursor-pointer hover:border-green-700 sm:px-5 sm:py-2 px-3 py-1 sm:text-base text-sm rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]"
             onClick={() => setActivProject(project)}
           >
             {project.name[i18n.language as keyof typeof project.name] ||

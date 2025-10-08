@@ -14,7 +14,7 @@ const ProjectView = ({ project }: ProjectViewProps) => {
         {project.name[i18n.language as keyof typeof project.name]}
       </h3>
       <div className="mt-5 flex flex-col md:flex-row gap-5">
-        <div className=" relative min-w-[300px] min-h-[200px] sm:min-w-[360px] sm:min-h-[200px] md:min-w-[500px] md:min-h-[280px]">
+        <div className=" relative min-w-[300px] min-h-[250px] sm:min-w-[360px] sm:min-h-[250px] md:min-w-[500px] md:min-h-[280px]">
           <a href={project.url}>
             <Image
               className=" object-cover object-top cursor-pointer hover:border-green-700  rounded-md bg-[var(--main-light-transparent)] border-2 border-[var(--main-light-transparent)]"
@@ -24,7 +24,7 @@ const ProjectView = ({ project }: ProjectViewProps) => {
             />
           </a>
         </div>
-        <p>
+        <p className="sm:text-base text-sm" >
           {
             project.description[
               i18n.language as keyof typeof project.description

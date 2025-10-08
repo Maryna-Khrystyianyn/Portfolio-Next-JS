@@ -8,21 +8,37 @@ export type Project = {
 /* new projects are first */
 /* languages en-de-uk */
 export const projectList: Project[] = [
-    {
-        id: 5,
-        name: {
-          en: "ToDo - React",
-          de: "ToDo - React",
-          uk: "Cписок завдань - React",
-        },
-        img: "todoReact.png",
-        description: {
-          en: "To-Do List built with React using useContext and useReducer. The project shows my progress in code structure and state management over four months.",
-          de: "To-Do-List-App mit React, useContext und useReducer. Das Projekt zeigt meinen Fortschritt in Code-Struktur und State-Management in vier Monaten.",
-          uk: "To-Do List на React з useContext та useReducer. Проєкт демонструє мій прогрес у структурі коду та роботі зі станом за чотири місяці.",
-        },
-        url: "https://todo-liste-gamma.vercel.app/",
-      },
+  {
+    id: 2,
+    name: {
+      en: "Online Shop – StayTime",
+      de: "Online Shop – StayTime",
+      uk: "Інтернет-магазин – StayTime",
+    },
+    img: "minecraft.png",
+    description: {
+      en: "This is an online store for selling various in-game items in Minecraft. The project was inspired by my son, who is passionate about Minecraft. The store was built using vanilla JavaScript, TypeScript, and SASS, with DOM manipulation and Local Storage used to manage the shopping cart.",
+      de: "Dies ist ein Online-Shop zum Verkauf verschiedener Spielgegenstände in Minecraft. Die Idee für das Projekt entstand durch meinen Sohn, der Minecraft begeistert spielt. Der Shop wurde mit Vanilla JavaScript, TypeScript und SASS umgesetzt. Dabei wurden DOM-Zugriffe und Local Storage zur Speicherung des Warenkorbs verwendet.",
+      uk: "Це інтернет-магазин для продажу різних ігрових предметів у Minecraft. Натхненням для проєкту став мій син, який захоплюється Minecraft. Магазин реалізовано на ванільному JavaScript з використанням TypeScript і SASS. Було застосовано доступ до DOM та Local Storage для збереження кошика.",
+    },
+    url: "https://maryna-khrystyianyn.github.io/StayTime---internet-shop/index.html",
+  },
+
+  {
+    id: 5,
+    name: {
+      en: "ToDo - React",
+      de: "ToDo - React",
+      uk: "Cписок завдань - React",
+    },
+    img: "todoReact.png",
+    description: {
+      en: "To-Do List built with React using useContext and useReducer. The project shows my progress in code structure and state management over four months.",
+      de: "To-Do-List-App mit React, useContext und useReducer. Das Projekt zeigt meinen Fortschritt in Code-Struktur und State-Management in vier Monaten.",
+      uk: "To-Do List на React з useContext та useReducer. Проєкт демонструє мій прогрес у структурі коду та роботі зі станом за чотири місяці.",
+    },
+    url: "https://todo-liste-gamma.vercel.app/",
+  },
   {
     id: 4,
     name: {
@@ -53,21 +69,7 @@ export const projectList: Project[] = [
     },
     url: "https://quiz-s9q4.vercel.app/",
   },
-  {
-    id: 2,
-    name: {
-      en: "Online Shop – StayTime",
-      de: "Online Shop – StayTime",
-      uk: "Інтернет-магазин – StayTime",
-    },
-    img: "minecraft.png",
-    description: {
-      en: "This is an online store for selling various in-game items in Minecraft. The project was inspired by my son, who is passionate about Minecraft. The store was built using vanilla JavaScript, TypeScript, and SASS, with DOM manipulation and Local Storage used to manage the shopping cart.",
-      de: "Dies ist ein Online-Shop zum Verkauf verschiedener Spielgegenstände in Minecraft. Die Idee für das Projekt entstand durch meinen Sohn, der Minecraft begeistert spielt. Der Shop wurde mit Vanilla JavaScript, TypeScript und SASS umgesetzt. Dabei wurden DOM-Zugriffe und Local Storage zur Speicherung des Warenkorbs verwendet.",
-      uk: "Це інтернет-магазин для продажу різних ігрових предметів у Minecraft. Натхненням для проєкту став мій син, який захоплюється Minecraft. Магазин реалізовано на ванільному JavaScript з використанням TypeScript і SASS. Було застосовано доступ до DOM та Local Storage для збереження кошика.",
-    },
-    url: "https://maryna-khrystyianyn.github.io/StayTime---internet-shop/index.html",
-  },
+
   {
     id: 1,
     name: {
