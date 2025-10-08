@@ -18,7 +18,7 @@ const ProjectHomeMobileViev = ({ project }: ProjectHomeMobileVievProps) => {
               alt={project.name[i18n.language as keyof typeof project.name]}
               width={300} height={200}
             />
-            <p className=""> {project.name[i18n.language as keyof typeof project.name] ||
+            <p className="mt-1"> {project.name[i18n.language as keyof typeof project.name] ||
               project.name["en"]} </p>
           </a>
      
