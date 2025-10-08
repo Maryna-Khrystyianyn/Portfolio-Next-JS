@@ -23,7 +23,8 @@ const Projects = () => {
             className="cursor-pointer hover:border-green-700 px-5 py-2 rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]"
             onClick={() => setActivProject(project)}
           >
-            {project.name[i18n.language as keyof typeof project.name]}
+            {project.name[i18n.language as keyof typeof project.name] ||
+              project.name["en"]}
           </button>
         ))}
       </div>
