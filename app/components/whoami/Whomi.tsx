@@ -22,8 +22,8 @@ const Whomi = () => {
 
   return (
     <div>
-      <h3>$ {t("whoami")}</h3>
-      <div>
+      <h3 className="sm:block hidden" >$ {t("whoami")}</h3>
+      <div className="flex flex-col justify-center items-center sm:items-start">
         <h1 className="text-2xl sm:text-4xl font-bold flex w-[300px] sm:w-[400px] items-end">
           <Image src={imgUrl} width={50} height={50} alt="m" className="pb-1" />
           <div>{t("name")}</div>

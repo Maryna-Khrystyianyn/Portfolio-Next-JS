@@ -12,36 +12,21 @@ const Navigation = () => {
       </Link>
       |
       <Link href="/about">
-        <Image
-          src="/nav/about.png"
-          width={30}
-          height={40}
-          alt={"about"}
-          className="sm:hidden"
-        />
-        <span className="text-xl text-zinc-800 sm:block hidden">{t("about")} </span>{" "}
+        <span className="text-xl text-zinc-800 sm:block hidden">
+          {t("about")}{" "}
+        </span>{" "}
       </Link>
       |
       <Link href="/projects">
-        <Image
-          src="/nav/projects.png"
-          width={40}
-          height={40}
-          alt={"projects"}
-          className="sm:hidden"
-        />
-        <span className="text-xl text-zinc-800 sm:block hidden">{t("projects")} </span>
+        <span className="text-xl text-zinc-800 sm:block hidden">
+          {t("projects")}{" "}
+        </span>
       </Link>
       |
       <Link href="/contacts">
-        <Image
-          src="/nav/contacts.png"
-          width={40}
-          height={40}
-          alt={"contacts"}
-          className="sm:hidden"
-        />
-        <span className="text-xl text-zinc-800 sm:block hidden">{t("contacts")} </span>
+        <span className="text-xl text-zinc-800 sm:block hidden">
+          {t("contacts")}{" "}
+        </span>
       </Link>
     </div>
   );

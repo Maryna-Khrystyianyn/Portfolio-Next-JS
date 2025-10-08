@@ -7,6 +7,9 @@ import Whomi from "./components/whoami/Whomi";
 import "./lib/i18n";
 import Skills from "./components/skills/Skills";
 import Navigation from "./components/navigation/Navigation";
+import { div } from "motion/react-client";
+import HeaderMobile from "./components/header/HeaderMobile";
+import NavigationMobile from "./components/navigation/NavigationMobile";
 
 export default function ClientLayout({
   children,
@@ -32,15 +35,30 @@ export default function ClientLayout({
       : "url('/bg-img-light2.png')";
 
   return (
-    <main
-      style={{ backgroundImage: bgImgUrl }}
-      className={`relative flex  items-center  justify-center pt-5 md:pt-15 h-screen  bg-repeat-x bg-top bg-[var(--bg)] text-[var(--text)] `}
-    >
-      <Navigation />
-      <div className="max-h-[80%] overflow-auto        flex flex-col gap-5 md:gap-15 p-6 pb-15 bg-[var(--bg-main)] m-3 rounded-md border border-sky-950 w-[90%] max-w-[900px]">
-        <Header />
-        {children}
-      </div>
-    </main>
+    <div>
+      <main
+        style={{ backgroundImage: bgImgUrl }}
+        className={`relative sm:flex hidden items-center  justify-center pt-5 md:pt-15 h-screen  bg-repeat-x bg-top bg-[var(--bg)] text-[var(--text)] `}
+      >
+        <Navigation />
+        <div className="max-h-[80%] overflow-auto        flex flex-col gap-5 md:gap-15 p-6 pb-15 bg-[var(--bg-main)] m-3 rounded-md border border-sky-950 w-[90%] max-w-[900px]">
+          <Header />
+          
+          {children}
+        </div>
+      </main>
+
+      {/* mobil version */}
+      <main className="sm:hidden bg-[var(--bg-main)] min-h-screen">
+        <HeaderMobile/>
+        <Whomi />
+        <NavigationMobile/>
+
+        <div className="px-5 mt-10">
+          {children}
+        </div>
+        
+      </main>
+    </div>
   );
 }
