@@ -21,7 +21,7 @@ export const projectList: Project[] = [
           de: "To-Do-List-App mit React, useContext und useReducer. Das Projekt zeigt meinen Fortschritt in Code-Struktur und State-Management in vier Monaten.",
           uk: "To-Do List на React з useContext та useReducer. Проєкт демонструє мій прогрес у структурі коду та роботі зі станом за чотири місяці.",
         },
-        url: "https://maryna-khrystyianyn.github.io/online-course/",
+        url: "https://todo-liste-gamma.vercel.app/",
       },
   {
     id: 4,
