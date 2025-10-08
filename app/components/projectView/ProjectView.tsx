@@ -13,7 +13,7 @@ const ProjectView = ({ project }: ProjectViewProps) => {
       <h3 className="text-center text-3xl font-bold">
         {project.name[i18n.language as keyof typeof project.name]}
       </h3>
-      <div className="mt-5 flex gap-5">
+      <div className="mt-5 flex flex-col md:flex-row gap-5">
         <div className=" relative min-w-[300px] min-h-[200px] sm:min-w-[360px] sm:min-h-[200px] md:min-w-[500px] md:min-h-[280px]">
           <a href={project.url}>
             <Image

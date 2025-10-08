@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## My portfolio project 
+[portfolio-next-js-mu-wheat.vercel.app](https://portfolio-next-js-mu-wheat.vercel.app/)
 
-First, run the development server:
+- built with Next.js 
+- features theme switching (light/dark), 
+- language selection, 
+- and various animations for a smooth and modern user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I used  **Next i18n**  for multilingual support, **Next Themes** for theme management, and **Framer Motion** for animations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project reflects my design style, attention to detail, and ability to work with modern frontend technologies.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ ## Mein Portfolio-Projekt 
+ [portfolio-next-js-mu-wheat.vercel.app](https://portfolio-next-js-mu-wheat.vercel.app/)
+ - wurde mit Next.js entwickelt 
+ - und bietet Theme-Umschaltung (hell/dunkel), 
+ - Sprachwechsel sowie verschiedene 
+ - Animationen für ein modernes und flüssiges Nutzererlebnis.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Für die Mehrsprachigkeit wurde **Next i18n**, für das Theme-Management **Next Themes** und für Animationen **Framer Motion** verwendet.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Das Projekt zeigt meinen Stil, meine Liebe zum Detail und meine Erfahrung mit modernen Frontend-Technologien.
