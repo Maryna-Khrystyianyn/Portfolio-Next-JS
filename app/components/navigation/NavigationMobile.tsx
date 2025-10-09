@@ -16,15 +16,13 @@ const NavigationMobile = () => {
         <div className="w-10 h-[2px] bg-[var(--text)]"></div>
       </button>
       <div
+        onClick={() => setIsOpen((prev) => !prev)}
         className={`absolute transition-all duration-500 w-full z-30 ${
           isOpen ? "scale-100 translate-x-0" : "scale-0 -translate-x-[300px]"
         }`}
       >
         <div className="flex flex-col w-[90%] mx-auto bg-[var(--muted)] rounded p-5 ">
-          <button
-            onClick={() => setIsOpen((prev) => !prev)}
-            className="w-full text-right text-2xl"
-          >
+          <button className="w-full text-right text-2xl">
             <FontAwesomeIcon icon={faXmark} />{" "}
           </button>
 
