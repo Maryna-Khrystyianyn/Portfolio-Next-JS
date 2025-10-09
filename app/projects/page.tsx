@@ -12,8 +12,8 @@ const Projects = () => {
 
   return (
     <div className="mt-[-30px]">
-      <h3>$ {t("projects")}</h3>
-      <p className="sm:text-base text-sm">{t("projectsDescription")}</p>
+      {/* <h3>$ {t("projects")}</h3>
+      <p className="sm:text-base text-sm">{t("projectsDescription")}</p> */}
 
       {/* Projects links */}
       <div className=" flex flex-wrap gap-3 sm:gap-5 sm:mt-10 mt-7">

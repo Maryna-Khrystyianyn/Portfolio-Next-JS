@@ -40,7 +40,7 @@ const ProjectHomeMobileViev = ({ project }: ProjectHomeMobileVievProps) => {
           isOpen ? "scale-100 translate-y-0" : "scale-0 -translate-y-[300px]"
         }`}
       >
-        <div className="flex flex-col w-[80%] mx-auto bg-[var(--project-transparent)] rounded p-5 border border-[var(--main-light)]">
+        <div className="flex flex-col w-[90%] mx-auto bg-[var(--project-transparent)] rounded p-5 border border-[var(--main-light)]">
           <button
             onClick={() => setIsOpen((prev) => !prev)}
             className="w-full text-right text-2xl"
