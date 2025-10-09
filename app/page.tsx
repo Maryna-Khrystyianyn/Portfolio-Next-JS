@@ -33,19 +33,19 @@ export default function Home() {
       </div>
       <div className="sm:hidden ">
         <div className="h-10 text-xl sm:mt-0 mt-7 sm:text-left text-center">
-          {t("iam")}
-          <TypeWriter
-            texts={[
-              `${t("typeText1")}`,
-              `${t("typeText2")}`,
-              `${t("typeText3")}`,
-              `${t("typeText4")}`,
-              `${t("typeText5")}`,
-            ]}
-          />
+         
         </div>
         {/*  <SkillsMobile /> */}
-        <DownloadCV />
+        <div className="flex justify-center items-center">
+            <a
+        className="hover:border-green-700 border rounded-md bg-[var(--main-light-transparent)] border-[var(--main-light-transparent)] w-40 p-2 flex justify-center"
+        href="/CV-Khrystyianyn.pdf"
+        download
+      >
+        Download CV
+      </a>
+        </div>
+      
 
         <ProjectHomeMobile />
       </div>

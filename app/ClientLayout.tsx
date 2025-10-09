@@ -7,7 +7,7 @@ import Whomi from "./components/whoami/Whomi";
 import "./lib/i18n";
 import Skills from "./components/skills/Skills";
 import Navigation from "./components/navigation/Navigation";
-import { div } from "motion/react-client";
+import { usePathname } from "next/navigation";
 import HeaderMobile from "./components/header/HeaderMobile";
 import NavigationMobile from "./components/navigation/NavigationMobile";
 
@@ -17,8 +17,9 @@ export default function ClientLayout({
   children: React.ReactNode;
 }) {
   const { theme, setTheme, resolvedTheme } = useTheme();
-
+  const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
+  const isHome = pathname === "/";
 
   useEffect(() => {
     setMounted(true); // true nach dem ersten Client-Render
@@ -43,21 +44,22 @@ export default function ClientLayout({
         <Navigation />
         <div className="max-h-[80%] overflow-auto        flex flex-col gap-5 md:gap-15 p-6 pb-15 bg-[var(--bg-main)] m-3 rounded-md border border-sky-950 w-[90%] max-w-[900px]">
           <Header />
-          
+
           {children}
         </div>
       </main>
 
       {/* mobil version */}
       <main className="sm:hidden bg-[var(--bg-main)] min-h-screen">
-        <HeaderMobile/>
+        <HeaderMobile />
         <Whomi />
-        <NavigationMobile/>
+        <div className={isHome?"pt-12":""}>
 
-        <div className="px-5 mt-10">
-          {children}
+          <NavigationMobile />
         </div>
         
+
+        <div className="px-5 mt-10">{children}</div>
       </main>
     </div>
   );
