@@ -11,7 +11,7 @@ const Projects = () => {
   const [activProject, setActivProject] = useState<Project>(projectList[0]);
 
   return (
-    <div className="mt-[-30px]">
+    <div className="mt-[-30px] mb-10">
       {/* <h3>$ {t("projects")}</h3>
       <p className="sm:text-base text-sm">{t("projectsDescription")}</p> */}
 
