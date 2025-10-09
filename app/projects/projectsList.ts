@@ -13,7 +13,7 @@ export const projectList: Project[] = [
     name: {
       en: "Online Shop – StayTime",
       de: "Online Shop – StayTime",
-      uk: "Інтернет-магазин – StayTime",
+      uk: "Mагазин – StayTime",
     },
     img: "minecraft.png",
     description: {

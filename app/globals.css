@@ -6,10 +6,11 @@
 :root {
   --bg: #e6e3e3;
   --bg-main: rgb(241, 241, 241);
-  --text: #111827;
+  --text: rgb(17, 24, 39);
   --muted: #6b7280;
   --main-light: #23984e;
   --main-light-transparent: rgba(35, 152, 78, 0.2);
+  --project-transparent: rgba(223, 233, 226, 0.95);
 }
 
 [data-theme="dark"] {
@@ -17,6 +18,7 @@
   --bg-main: black;
   --text: #f8fafc;
   --muted: #9ca3af;
+  --project-transparent: rgba(14, 39, 23, 0.95);
 }
 
 /* =======================

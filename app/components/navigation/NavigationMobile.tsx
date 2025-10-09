@@ -20,11 +20,11 @@ const NavigationMobile = () => {
           isOpen ? "scale-100 translate-x-0" : "scale-0 -translate-x-[300px]"
         }`}
       >
-        <div
-          onClick={() => setIsOpen((prev) => !prev)}
-          className="flex flex-col w-[90%] mx-auto bg-[var(--muted)] rounded p-5 "
-        >
-          <button className="w-full text-right text-2xl">
+        <div className="flex flex-col w-[90%] mx-auto bg-[var(--muted)] rounded p-5 ">
+          <button
+            onClick={() => setIsOpen((prev) => !prev)}
+            className="w-full text-right text-2xl"
+          >
             <FontAwesomeIcon icon={faXmark} />{" "}
           </button>
 
