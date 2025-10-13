@@ -13,8 +13,8 @@ const ProjectView = ({ project }: ProjectViewProps) => {
       <h3 className="text-center text-3xl font-bold">
         {project.name[i18n.language as keyof typeof project.name]}
       </h3>
-      <div className="mt-5 flex flex-col md:flex-row gap-5">
-        <div className=" relative min-w-[300px] min-h-[250px] sm:min-w-[360px] sm:min-h-[250px] md:min-w-[500px] md:min-h-[280px]">
+      <div className="mt-5 flex flex-col gap-5">
+        <div className=" relative w-full h-[350px] ">
           <a href={project.url}>
             <Image
               className=" object-cover object-top cursor-pointer hover:border-green-700  rounded-md bg-[var(--main-light-transparent)] border-2 border-[var(--main-light-transparent)]"
@@ -35,9 +35,7 @@ const ProjectView = ({ project }: ProjectViewProps) => {
             className="block font-bold mt-5 w-60 text-center cursor-pointer hover:border-green-700  p-2 rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]"
           >
             {t("visit")}
-            <span className="text-[#ed453c]">{` > `}</span>
-            <span className="text-[#eeb810]">{` > `}</span>
-            <span className="text-[#1fc25f]">{` > `}</span>
+            <span className="text-[#1fc25f]">{` > > >`}</span>
           </a>
         </p>
       </div>
