@@ -14,7 +14,7 @@ const ProjectView = ({ project }: ProjectViewProps) => {
         {project.name[i18n.language as keyof typeof project.name]}
       </h3>
       <div className="mt-5 flex flex-col gap-5">
-        <div className=" relative w-full h-[350px] ">
+        <div className=" relative w-full h-[200px] sm:h-[350px]">
           <a href={project.url}>
             <Image
               className=" object-cover object-top cursor-pointer hover:border-green-700  rounded-md bg-[var(--main-light-transparent)] border-2 border-[var(--main-light-transparent)]"

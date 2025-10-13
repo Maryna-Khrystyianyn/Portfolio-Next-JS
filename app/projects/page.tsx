@@ -41,7 +41,7 @@ const Projects = () => {
       <motion.div 
       initial={{ opacity: 0, y: 20, filter:"blur(5px)"}} animate={{ opacity: 1, y: 0, filter:"blur(0px)"  }} transition={{duration:0.8}}
       >
- <div className="mt-5 space-y-30 overflow-auto max-h-[650px] pb-[100px] mb-[-80px] no-scrollbar">
+ <div className="mt-5 space-y-30 overflow-auto lg:max-h-[650px] max-h-[550px] pb-[100px] mb-[-80px] no-scrollbar">
         {projectList.map((project) => (
           <div
             key={project.id}
