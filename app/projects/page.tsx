@@ -19,7 +19,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="mt-[-70px] mb-10 ">
+    <div className="mt-[-30px] sm:mt-[-70px] mb-10 ">
       {/* <h3>{t("projects")}</h3>
       <p className="sm:text-base text-sm">{t("projectsDescription")}</p> */}
 
