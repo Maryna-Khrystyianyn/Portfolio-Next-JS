@@ -1,7 +1,8 @@
 "use client";
 import { MySkills } from "./skills";
 import { useTranslation } from "react-i18next";
-import { motion } from "motion/react"
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 
 const Skills = () => {
@@ -14,10 +15,16 @@ const Skills = () => {
         {MySkills.map((skill, index) => {
           return (
             <motion.button initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{duration:0.5, delay:index*0.4}}
-              key={skill}
-              className="px-5 py-2 rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]"
+              key={skill.title}
+              className="px-5 py-2 "
             >
-              {skill}
+               <div className="flex justify-center gap-1">
+                <div className={`w-7 h- flex items-center justify-center rounded-full ${skill.bg}`}>
+                  <Image src={skill.img} width={16} height={16} alt={skill.title}  unoptimized/> 
+                </div>
+                
+                <span>{skill.title}</span>
+              </div>
             </motion.button>
           );
         })}

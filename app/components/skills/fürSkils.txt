@@ -1,0 +1,56 @@
+<div class="flex flex-wrap gap-4">
+  <!-- HTML5 -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-orange-500">
+    <img src="https://cdn.simpleicons.org/html5/ffffff" alt="HTML5" class="w-8 h-8">
+  </div>
+
+  <!-- JavaScript -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-yellow-400">
+    <img src="https://cdn.simpleicons.org/javascript/000000" alt="JavaScript" class="w-8 h-8">
+  </div>
+
+  <!-- TypeScript -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-600">
+    <img src="https://cdn.simpleicons.org/typescript/ffffff" alt="TypeScript" class="w-8 h-8">
+  </div>
+
+  <!-- React.js -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-400">
+    <img src="https://cdn.simpleicons.org/react/ffffff" alt="React.js" class="w-8 h-8">
+  </div>
+
+  <!-- Next.js -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-black">
+    <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js" class="w-8 h-8">
+  </div>
+
+  <!-- Tailwind -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-teal-500">
+    <img src="https://cdn.simpleicons.org/tailwindcss/ffffff" alt="Tailwind" class="w-8 h-8">
+  </div>
+
+  <!-- Express.js -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-700">
+    <img src="https://cdn.simpleicons.org/express/ffffff" alt="Express.js" class="w-8 h-8">
+  </div>
+
+  <!-- Bootstrap -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-purple-600">
+    <img src="https://cdn.simpleicons.org/bootstrap/ffffff" alt="Bootstrap" class="w-8 h-8">
+  </div>
+
+  <!-- Git -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-orange-600">
+    <img src="https://cdn.simpleicons.org/git/ffffff" alt="Git" class="w-8 h-8">
+  </div>
+
+  <!-- PostgreSQL -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-800">
+    <img src="https://cdn.simpleicons.org/postgresql/ffffff" alt="PostgreSQL" class="w-8 h-8">
+  </div>
+
+  <!-- MongoDB -->
+  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-green-600">
+    <img src="https://cdn.simpleicons.org/mongodb/ffffff" alt="MongoDB" class="w-8 h-8">
+  </div>
+</div>

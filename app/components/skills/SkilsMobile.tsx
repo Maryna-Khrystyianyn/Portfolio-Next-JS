@@ -14,10 +14,12 @@ const SkillsMobile = () => {
         {MySkills.map((skill, index) => {
           return (
             <motion.button initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{duration:0.5, delay:index*0.4}}
-              key={skill}
+              key={skill.title}
               className="px-3 text-sm py-1 rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]"
             >
-              {skill}
+              <div>
+                <span>{skill.img}</span> <span>{skill.title}</span>
+              </div>
             </motion.button>
           );
         })}
