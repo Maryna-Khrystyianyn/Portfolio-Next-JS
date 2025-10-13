@@ -45,7 +45,9 @@ const Projects = () => {
         {projectList.map((project) => (
           <div
             key={project.id}
-            ref={(el) => (projectRefs.current[project.id] = el)}
+            ref={(el) => {
+              projectRefs.current[project.id] = el;
+            }}
             className="scroll-mt-5"
           >
             <ProjectView project={project} />
