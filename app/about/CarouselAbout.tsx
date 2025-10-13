@@ -19,6 +19,7 @@ const CatouselAbout = () => {
     <>
       <Swiper
         effect={"coverflow"}
+        loop={true}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
