@@ -28,7 +28,7 @@ const Projects = () => {
         {projectList.map((project) => (
           <button
             key={project.id}
-            className="cursor-pointer hover:border-green-700 sm:px-5 sm:py-2 px-3 py-1 sm:text-base text-sm rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]"
+            className="cursor-pointer hover:border-green-700 sm:px-5 sm:py-2 px-3 py-1 sm:text-base text-[11px] rounded-md bg-[var(--main-light-transparent)] border border-[var(--main-light-transparent)]"
             onClick={() => scrollToProject(project.id)}
           >
             {project.name[i18n.language as keyof typeof project.name] ||
@@ -41,7 +41,7 @@ const Projects = () => {
       <motion.div 
       initial={{ opacity: 0, y: 20, filter:"blur(5px)"}} animate={{ opacity: 1, y: 0, filter:"blur(0px)"  }} transition={{duration:0.8}}
       >
- <div className="mt-5 space-y-30 overflow-auto lg:max-h-[650px] max-h-[550px] pb-[100px] mb-[-80px] no-scrollbar">
+ <div className="mt-5 space-y-30 overflow-auto max-h-[540px] sm:max-h-[500px] md:max-h-[450px] pb-[100px] mb-[-80px] no-scrollbar">
         {projectList.map((project) => (
           <div
             key={project.id}
