@@ -12,10 +12,9 @@ function MyFoto() {
         <div className={styles.imgItem}>
           <Image
             src="/me4.jpg"
-            width={300}
-            height={300}
+            fill
             alt="Maryna Khrystyianyn"
-            className={`${styles.mainFotoImg} ${loaded ? styles.loaded : ''}`}
+            className={`${styles.mainFotoImg} ${loaded ? styles.loaded : ""}`}
             onLoadingComplete={() => setLoaded(true)}
           />
         </div>

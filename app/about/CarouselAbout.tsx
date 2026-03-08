@@ -16,7 +16,7 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 const CatouselAbout = () => {
   return (
-    <>
+    <div className="max-w-4xl mx-auto">
       <Swiper
         effect={"coverflow"}
         loop={true}
@@ -50,7 +50,7 @@ const CatouselAbout = () => {
           );
         })}
       </Swiper>
-    </>
+    </div>
   );
 };
 

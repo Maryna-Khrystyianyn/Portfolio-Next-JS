@@ -4,6 +4,7 @@ import {
   faGithub,
   faInstagram,
   faFacebook,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function BtnSciRow() {
@@ -17,6 +18,17 @@ export default function BtnSciRow() {
       >
         <FontAwesomeIcon
           icon={faGithub}
+          className="text-[1.5rem] text-[var(--muted)]"
+        />
+      </a>
+       <a
+        href="https://www.linkedin.com/in/marinakhrystyianyn/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.btnLink}
+      >
+        <FontAwesomeIcon
+          icon={faLinkedin}
           className="text-[1.5rem] text-[var(--muted)]"
         />
       </a>
@@ -42,6 +54,7 @@ export default function BtnSciRow() {
           className="text-[1.5rem] text-[var(--muted)]"
         />
       </a>
+     
     </div>
   );
 }

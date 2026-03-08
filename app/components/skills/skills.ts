@@ -26,6 +26,11 @@ export const MySkills: Skill[] = [
     bg:"bg-gray-700",
   },
   {
+    title: "Python",
+    img: "https://cdn.simpleicons.org/python/ffffff",
+    bg: "bg-blue-500",
+  },
+  {
     title: "React.js",
     img:"https://cdn.simpleicons.org/react/ffffff",
     bg:"bg-blue-400",
@@ -64,6 +69,27 @@ export const MySkills: Skill[] = [
     title: "Mongo DB",
     img:"https://cdn.simpleicons.org/mongodb/ffffff" ,
     bg:"bg-green-600",
+  },
+  
+  {
+    title: "React native",
+    img: "https://cdn.simpleicons.org/react/ffffff",
+    bg: "bg-sky-500",
+  },
+  {
+    title: "AI integration",
+    img: "https://cdn.simpleicons.org/googlegemini/ffffff",
+    bg: "bg-indigo-600",
+  },
+  {
+    title: "Google Agent Studio",
+    img: "https://cdn.simpleicons.org/google/ffffff",
+    bg: "bg-red-500",
+  },
+  {
+    title: "Google Antigravity",
+    img: "https://antigravity.google/assets/image/brand/antigravity-icon__white.png",
+    bg: "bg-slate-700",
   },
 ];
 

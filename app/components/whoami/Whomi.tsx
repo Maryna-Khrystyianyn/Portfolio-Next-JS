@@ -26,7 +26,7 @@ const Whomi = () => {
       <div className="flex flex-col justify-center items-center sm:items-start">
         <h1 className="text-3xl sm:text-4xl font-bold flex  sm:w-[400px] items-end">
           <Image src={imgUrl} width={50} height={50} alt="m" className="pb-1" />
-          <div>{t("name")}</div>
+          <div>{t("name")} </div>
         </h1>
 
         <div className="font-mono text-2xl tracking-widest text-[var(--muted)] py-1">

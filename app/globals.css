@@ -45,3 +45,14 @@ body {
 h3 {
   color: var(--main-light);
 }
+
+/* Swiper Pagination Styling */
+.swiper-pagination-bullet {
+  background-color: var(--muted) !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-light) !important;
+  opacity: 1 !important;
+}

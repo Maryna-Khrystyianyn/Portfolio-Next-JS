@@ -9,7 +9,7 @@ const Skills = () => {
   const { t } = useTranslation();
   return (
     <div className="mt-5">
-      <h3>$ {t("skills")}</h3>
+      <h3 className="text-2xl">$ {t("skills")}</h3>
 
       <div className="flex flex-wrap gap-3 my-2">
         {MySkills.map((skill, index) => {

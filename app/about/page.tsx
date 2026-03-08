@@ -8,6 +8,12 @@ import MyFoto from "../components/myFoto/MyFoto";
 import BtnSci from "../components/btnSci/BtnSci";
 import CarouselAbout from "./CarouselAbout";
 import Skills from "../components/skills/Skills";
+import GrowthChart from "./GrowthChart";
+import BtnSciRow from "../components/btnSci/BtnSciRow";
+import BtnSciColumn from "../components/btnSci/BtnSciColumn";
+import Whomi from "../components/whoami/Whomi";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   const { t } = useTranslation();
@@ -24,73 +30,85 @@ const About = () => {
   }
 
   const imgUrl = resolvedTheme === "dark" ? "/m.png" : "/m-light.png";
+
   return (
     <div className="flex flex-col gap-3 pb-20">
-      <div className="flex flex-col-reverse items-center md:flex-row   ">
-        {/* Title und typing text und social media Btn*/}
-        <div className="flex flex-col gap-2 w-full md:w-[400px] lg:w-[500px]">
-          {/* title */}
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-10 lg:gap-5">
+        {/* Photo & Social section - First on mobile */}
+        <div className="flex flex-col sm:flex-row lg:flex-row items-center justify-center lg:justify-start order-1 lg:order-2 gap-10">
+          <MyFoto />
+          <div className="sm:block hidden">
+            <BtnSciColumn />
+          </div>
+          <div className="sm:hidden">
+            <BtnSciRow />
+          </div>
+        </div>
 
-          <div className="hidden sm:block">
-            <h1 className="text-2xl sm:text-4xl font-bold flex w-[300px] sm:w-[400px] items-end">
+        {/* Content section */}
+        <div className="px md:px-10 lg:px-20 order-2 lg:order-1">
+         
+          <div className="">
+            <h1 className="text-3xl mb-6 2xl:text-6xl xl:text-5xl md:text-4xl font-bold flex flex-wrap items-end gap-2">
               <Image
                 src={imgUrl}
-                width={50}
-                height={50}
+                width={70}
+                height={70}
                 alt="m"
-                className="pb-1"
+                className="pb-1 w-12 sm:w-20"
               />
-              <div>{t("name")}</div>
+              <span>{t("name")}</span>
             </h1>
           </div>
-          {/* taiping */}
-          <div className="h-10 text-xl sm:mt-0 mt-15 sm:text-left text-center">
-            {t("iam")}
-            <TypeWriter
-              texts={[
-                `${t("typeText1")}`,
-                `${t("typeText2")}`,
-                `${t("typeText3")}`,
-                `${t("typeText4")}`,
-                `${t("typeText5")}`,
-              ]}
-            />
-          </div>
-          {/* social media Btn */}
-          <div className="hidden md:block mt-10">
-            <BtnSci />
+          
+         
+          <div className="font-mono text-xl 2xl:text-4xl xl:text-3xl lg:text-2xl mb-10 tracking-widest text-[var(--muted)] py-1">
+            {t("webdev")}
           </div>
         </div>
-        {/* foto */}
-        <div className="flex justify-center items-center gap-10">
-          <MyFoto />
-          <div className="md:hidden">
-            <BtnSci />
-          </div>
+        <div className="px-5 md:px-10 lg:px-20 col-span-full order-3 ">
+          <Skills />
         </div>
       </div>
-      {/* main text */}
-      <h2 className="mt-10 text-xl font-bold">{t("aboutTitel")} </h2>
-      {/*  <p>{t("aboutText")}</p> */}
+      {/* main text section */}
+      <section className="mt-12 p-8 bg-[var(--main-light-transparent)] rounded-2xl border border-[var(--main-light-transparent)] backdrop-blur-sm shadow-sm">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+          <div className="flex-1">
+            <h2 className="font-mono text-2xl sm:text-4xl font-bold mb-4 tracking-tight">
+              {t("aboutTitel")} 
+            </h2>
+            <div className="text-lg sm:text-2xl leading-relaxed text-[var(--text)] opacity-90">
+              <p className="mb-4">{t("aboutText")}</p>
+              <p>{t("aboutPhilosophy1")}</p>
+            </div>
+          </div>
+          
+          <div className="w-full md:w-auto self-end md:self-center">
+            <a
+              className="group relative flex items-center justify-center gap-3 px-8 py-4 bg-[var(--main-light)] text-white font-semibold rounded-xl hover:bg-[#1a7a3d] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95 w-full md:w-56"
+              href="/CV-Khrystyianyn.pdf"
+              download
+            >
+              <FontAwesomeIcon icon={faFileArrowDown} className="text-xl group-hover:animate-bounce" />
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+      </section>
 
-      <p>{t("aboutPhilosophy1")}</p>
-      <a
-        className="hover:border-green-700 border rounded-md bg-[var(--main-light-transparent)] border-[var(--main-light-transparent)] w-40 p-2 flex justify-center"
-        href="/CV-Khrystyianyn.pdf"
-        download
-      >
-        Download CV
-      </a>
-   
-      <Skills />
-      <h3 className="pt-7">$ {t("aboutPhilosophyTitle")}</h3>
-      <p>{t("aboutPhilosophy2")}</p>
-      <p>{t("aboutPhilosophy3")}</p>
+      <GrowthChart />
+<div className="px-5 sm:px-20">
+
+   <h3 className="pt-7 text-2xl">$ {t("aboutPhilosophyTitle")}</h3>
+      <p className="sm:text-2xl">{t("aboutPhilosophy2")}</p>
+      <p className="sm:text-2xl">{t("aboutPhilosophy3")}</p>
       <CarouselAbout />
-      <p>{t("aboutPhilosophy4")}</p>
-      <p>{t("aboutPhilosophy5")}</p>
-      <p>{t("aboutPhilosophy6")}</p>
-      <p className="text-center font-bold">{t("aboutPhilosophy7")}</p>
+      <p className="sm:text-2xl">{t("aboutPhilosophy4")}</p>
+      <p className="sm:text-2xl">{t("aboutPhilosophy5")}</p>
+      <p className="sm:text-2xl">{t("aboutPhilosophy6")}</p>
+      <p className="text-center font-bold sm:text-4xl pt-10">{t("aboutPhilosophy7")}</p>
+</div>
+     
     </div>
   );
 };
