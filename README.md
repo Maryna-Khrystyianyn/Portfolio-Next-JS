@@ -1,71 +1,85 @@
-# Professional Portfolio | Maryna Khrystyianyn
+# Modern Full-Stack Portfolio | Engineering Showcase
 
-Welcome to my professional portfolio! This project is a comprehensive showcase of my journey as a Full-Stack Developer, featuring a range of projects from AI-driven agents to full-stack web applications and mobile apps.
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-11-ff69b4?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![Cypress](https://img.shields.io/badge/Cypress-13-17202C?style=for-the-badge&logo=cypress)](https://www.cypress.io/)
 
-## 🚀 Live Demo
-Check out the live version here: [portfolio-next-js-mu-wheat.vercel.app](https://portfolio-next-js-mu-wheat.vercel.app/)
+A high-performance, accessible, and multilingual professional portfolio engineering showcase. This repository demonstrates advanced usage of the **Next.js 15 App Router**, state management solutions, and AI-driven automation.
 
-## ✨ Key Features
+## 🚀 Vision & Objectives
+The goal of this project is to demonstrate a "Middle-Level" engineering standard, focusing on:
+- **Clean Architecture**: Separation of concerns between UI components, business logic, and internationalization layers.
+- **Performance Excellence**: Utilizing Next.js Server Components, Turbopack, and optimized asset delivery.
+- **Scalability**: A modular project structure capable of supporting additional features and micro-frontends.
 
-- **🌐 Multilingual Support**: Fully localized in **English**, **German**, and **Ukrainian** using `i18next`.
-- **🌙 Dynamic Themes**: Elegant **Dark** and **Light** modes with automatic system detection via `next-themes`.
-- **🎭 Smooth Animations**: immersive user experience with **Framer Motion** for page transitions and scroll-triggered reveals.
-- **📱 Fully Responsive**: Optimized for all devices, from ultra-wide desktops to mobile phones.
-- **🖼️ Interactive Projects**: A dedicated projects hub with clickable galleries and detailed case studies.
+## 🛠️ Architectural Tech Stack
 
-## 🛠️ Tech Stack
+### Core Framework
+- **Next.js 15 (App Router)**: Leveraged for its advanced routing capabilities, Server-Side Rendering (SSR), and Incremental Static Regeneration (ISR).
+- **TypeScript**: Strict type-checking and interface definitions for robust, predictable code.
 
-- **Framework**: [Next.js 15](https://nextjs.org/) (App Router, Turbopack)
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Localization**: [i18next](https://www.i18next.com/) & [react-i18next](https://react.i18next.com/)
-- **UI Components**: [FontAwesome](https://fontawesome.com/) & [Swiper.js](https://swiperjs.com/)
+### UI & UX Engineering
+- **Tailwind CSS 4.0**: Utilizing the latest CSS engine for rapid, maintainable design systems and custom theme orchestration.
+- **Framer Motion**: Orchestrated animations (exit/entry transitions, staggered scroll reveals) to enhance user engagement.
+- **Next-Themes**: Centralized theme management with standard-compliant color tokens for light/dark modes.
 
-## 📂 Project Showcase
+### Globalization & Logic
+- **i18next / react-i18next**: Enterprise-grade localization framework supporting English, German, and Ukrainian with dynamic switching.
+- **Zod**: Runtime schema validation for forms and API responses.
 
-### 🤖 AI E-invoice Agent
-An advanced, AI-driven invoice processing orchestrator. Developed during an internship at **fintom8**, it uses **Google GECX** and **MCP servers** to manage complex sub-agent workflows.
-*   **Highlight**: Participated in the **Google AI Student Hackathon — Warsaw** (March 2026).
+### Quality Assurance
+- **Cypress**: Integration and Component testing to ensure delivery of high-quality, bug-free features.
 
-### 💅 Nail Studio
-A professional full-stack website featuring an online booking system and admin dashboard.
-*   **Key Tech**: Next.js, PostgreSQL, Prisma, Supabase, Zod.
-*   **Fun Fact**: Developed in just **3 days** using AI-assisted engineering.
+## 📂 Engineering Case Studies
 
-### 🧀 Cheese with Love
-A community platform for cheesemakers featuring recipe management, production tracking, and an **AI Chatbot**.
-*   **Ecosystem**: Includes a **React Native** mobile diary for on-the-go tracking.
+### 1. AI E-invoice Agent — Orchestrator Design
+- **Concept**: A "Root Agent" developed during an internship at **fintom8**.
+- **Tech**: Integrated **Google GECX** and **MCP (Model Context Protocol)** servers.
+- **Challenge**: Coordinating multi-agent workflows to validate complex EN 16931 e-invoice standards.
+- **Recognition**: Successfully presented at the **Google AI Student Hackathon** in Warsaw.
 
-### 🎮 StayTime Store
-A Minecraft-themed online store built to master the fundamentals of web development.
-*   **Key Tech**: Vanilla JavaScript, TypeScript, SASS, DOM Manipulation.
+### 2. Full-Stack Nail Studio — Rapid Delivery
+- **Concept**: End-to-end commerce solution with booking and CRM capabilities.
+- **Tech Stack**: Next.js, PostgreSQL via Prisma, Supabase Auth, and React Hook Form.
+- **Metric**: Delivered a production-ready MVP in **3 days** through AI-assisted engineering and modular component design.
 
-### 📝 ToDo - React
-A milestone project showcasing my early mastery of React state management (`useContext`, `useReducer`).
+### 3. Cheese with Love Ecosystem — Cross-Platform Interoperability
+- **Concept**: A comprehensive community platform combined with a specialized mobile companion.
+- **Tech**: Next.js Web App + **React Native** Mobile Application.
+- **Logic**: Shared types and branding across web and mobile via a unified design system.
 
-## 🛠️ Getting Started
+## 🏗️ Project Structure
 
-### Prerequisites
-- Node.js (latest LTS recommended)
-- npm or yarn
+```bash
+├── app/                  # App Router: Pages, Layouts, and Templates
+│   ├── components/       # Atomic and Molecular components
+│   ├── lib/              # Shared utility functions and i18n config
+│   ├── projects/         # Individual project detail pages
+│   └── template.tsx      # Global view transitions
+├── cypress/              # End-to-End and Component tests
+├── public/               # Optimized assets and media
+└── next.config.ts        # Advanced Next.js configuration
+```
+
+## ⚙️ Development Lifecycle
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Maryna-Khrystyianyn/Portfolio-Next-JS.git
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+```
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Development
+```bash
+npm run dev
+```
+
+### Testing (Cypress)
+```bash
+npx cypress open
+```
 
 ---
-Built with ❤️ by [Maryna Khrystyianyn](https://github.com/Maryna-Khrystyianyn)
+**Maryna Khrystyianyn** | *Full-Stack Developer*  
+[LinkedIn](your-linkedin-link) • [GitHub](https://github.com/Maryna-Khrystyianyn) • [Portfolio](https://portfolio-next-js-mu-wheat.vercel.app/)
