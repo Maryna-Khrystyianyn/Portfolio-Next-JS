@@ -69,7 +69,7 @@ const StayTimeProject = () => {
           
           <div className="text-lg flex flex-col gap-2 mb-6 text-[var(--muted)]">
             <p><span className="font-bold text-[var(--main-light)]">{t("projectAuthor") || "Project by"}:</span> Maryna Khrystyianyn</p>
-            <p><span className="font-bold text-[var(--main-light)]">Inspiration:</span> My son's passion for Minecraft</p>
+            <p><span className="font-bold text-[var(--main-light)]">Inspiration:</span> My son&apos;s passion for Minecraft</p>
           </div>
 
           <p className=" my-10 ml-10 text-xl lg:text-2xl italic text-[var(--muted)] border-l-4 border-[var(--main-light-transparent)] pl-6 py-2">
@@ -107,7 +107,7 @@ const StayTimeProject = () => {
       >
         <h2 className="text-3xl font-bold mb-6 text-[var(--main-light)]">{t("projectPhilosophy") || "Project Philosophy"}</h2>
         <p className="text-xl lg:text-2xl leading-relaxed mb-6 italic">
-          "{t("stayTimePhilosophy")}"
+          &quot;{t("stayTimePhilosophy")}&quot;
         </p>
         <p className="text-lg lg:text-xl leading-relaxed text-[var(--muted)]">
           {t("stayTimeLearning")}

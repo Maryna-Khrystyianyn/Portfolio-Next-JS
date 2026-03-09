@@ -4,7 +4,7 @@ import { projectList } from "../projectsList";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faMobileAlt, faCamera, faBell, faWifi, faBook, faCode, faLayerGroup, faTrophy, faCheckCircle, faMoon, faGlobe, faHourglassHalf, faChartBar, faBookOpen } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faMobileAlt, faCamera, faBell, faWifi, faBook, faLayerGroup, faTrophy, faCheckCircle, faMoon, faGlobe, faHourglassHalf, faChartBar, faBookOpen } from "@fortawesome/free-solid-svg-icons";
 
 const CheeseMobileDiaryProject = () => {
   const router = useRouter();

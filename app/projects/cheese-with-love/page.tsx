@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { motion } from "motion/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faExternalLinkAlt, faUserShield, faUserCheck, faUser, faBook, faClock, faStore, faImage, faRobot, faCode, faLayerGroup } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faExternalLinkAlt, faUserShield, faUserCheck, faUser, faBook, faClock, faStore, faImage, faRobot, faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCoverflow } from "swiper/modules";
 

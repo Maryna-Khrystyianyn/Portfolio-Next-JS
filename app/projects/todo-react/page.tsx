@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { motion } from "motion/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faExternalLinkAlt, faCode, faLayerGroup, faRoute, faBolt, faPalette, faHistory } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faExternalLinkAlt, faLayerGroup, faRoute, faBolt, faPalette, faHistory } from "@fortawesome/free-solid-svg-icons";
 
 // Import Swiper styles
 import "swiper/css";
@@ -103,7 +103,7 @@ const TodoReactProject = () => {
       >
         <h2 className="text-3xl font-bold mb-6 text-[var(--main-light)]">{t("projectPhilosophy") || "Project Philosophy"}</h2>
         <p className="text-xl lg:text-2xl leading-relaxed mb-6 italic">
-          "{t("todoPhilosophy")}"
+          &quot;{t("todoPhilosophy")}&quot;
         </p>
         <p className="text-lg lg:text-xl leading-relaxed text-[var(--muted)]">
           {t("todoSoftSkills")}
