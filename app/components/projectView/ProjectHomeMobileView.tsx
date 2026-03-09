@@ -54,7 +54,7 @@ const ProjectHomeMobileViev = ({ project }: ProjectHomeMobileVievProps) => {
               ]
             }
           </p>
-<a href={project.url} className="text-[var(--main-light)] py-5"> {t("visit")}</a>
+<a href={`/projects/${project.slug}`} className="text-[var(--main-light)] py-5"> {t("details")}</a>
 
         </div>
       </div>

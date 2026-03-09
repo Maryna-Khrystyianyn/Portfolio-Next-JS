@@ -224,7 +224,7 @@ const CheeseWithLoveProject = () => {
           >
             {["k1.png", "k2.png", "k3.png", "k4.png", "k5.png", "k6.png"].map((img, index) => (
               <SwiperSlide key={index} className="flex items-center justify-center pb-12" style={{ width: '80%'}}>
-                <div className="relative w-[800px] h-[500px]  rounded-2xl  shadow-2xl">
+                <div className="relative w-[400px] md:w-[800px] h-[300px] md:h-[500px]  rounded-2xl  shadow-2xl">
                   <Image
                     src={`/projects/kease/${img}`}
                     alt={`Project Screenshot ${index + 1}`}

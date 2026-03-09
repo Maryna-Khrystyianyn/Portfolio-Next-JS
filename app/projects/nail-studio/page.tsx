@@ -163,7 +163,7 @@ const NailStudioProject = () => {
           >
             {["n1.png", "n2.png", "n3.png", "n4.png", "n5.png", "n6.png"].map((img, index) => (
               <SwiperSlide key={index} className="flex items-center justify-center pb-12" style={{ width: '80%'}}>
-                <div className="relative w-[800px] h-[500px]  rounded-2xl  shadow-2xl">
+                <div className="relative w-[400px] md:w-[800px] h-[300px] md:h-[500px]  rounded-2xl  shadow-2xl">
                   <Image
                     src={`/projects/nail/${img}`}
                     alt={`Project Screenshot ${index + 1}`}
